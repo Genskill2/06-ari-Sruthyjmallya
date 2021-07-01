@@ -11,10 +11,10 @@ string ari(string paragraph){
     if(isalnum(paragraph[i])){
       characters++;
     }
-    if(isspace(paragraph[i])){
+    else if(isspace(paragraph[i])){
       words++;
     }
-    if(paragraph[i]=='!' || paragraph[i]=='?' || paragraph[i]=='.'){
+    else if(paragraph[i]=='!' || paragraph[i]=='?' || paragraph[i]=='.'){
       sentences++;
     }
   }
