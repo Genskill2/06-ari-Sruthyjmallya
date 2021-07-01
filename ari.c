@@ -22,7 +22,7 @@ string ari(string paragraph){
   }
 
   marks = 4.71*((float)characters/(float)words) + 0.5*((float)words/(float)sentences) - 21.43;
-  score = ceil(marks);
+  score = (int)marks;
   
   
   switch(score){
