@@ -8,7 +8,7 @@ string ari(string paragraph){
   int i = 0,score;
   int words=0,characters=0,sentences=0;
   while(paragraph[i]!='\0'){
-    if(isalnum(paragraph[i]){
+    if(isalnum(paragraph[i])){
       characters++;
     }
     if(paragraph[i]==" "){
@@ -21,20 +21,6 @@ string ari(string paragraph){
 
   score = ceil(4.71*(characters/words) + 0.5*(words/sentences) - 21.43);
   
-         |
- |     2 |   6-7 |  |
- |     3 |   7-9 |         |
- |     4 |  9-10 |       |
- |     5 | 10-11 |        |
- |     6 | 11-12 |         |
- |     7 | 12-13 |       |
- |     8 | 13-14 |        |
- |     9 | 14-15 |         |
- |    10 | 15-16 |        |
- |    11 | 16-17 |      |
- |    12 | 17-18 |      |
- |    13 | 18-24 |     |
- |    14 |   24+ | 
   
   switch(score){
     case 1: string level = "Kindergarten";break;
