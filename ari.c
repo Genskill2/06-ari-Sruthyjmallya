@@ -4,7 +4,6 @@
 #include<string.h>
 
 string ari(string paragraph){
-  int n = strlen(paragraph);
   int i = 0,score;
   int words=0,characters=0,sentences=0;
   string level;
