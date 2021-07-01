@@ -17,6 +17,7 @@ string ari(string paragraph){
     else if(paragraph[i]=='!' || paragraph[i]=='?' || paragraph[i]=='.'){
       sentences++;
     }
+    i++;
   }
 
   score = ceil(4.71*(characters/words) + 0.5*(words/sentences) - 21.43);
