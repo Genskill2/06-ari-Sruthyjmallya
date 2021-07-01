@@ -33,7 +33,7 @@ string ari(string paragraph){
     case 7: level = "Seventh Grade";break;
     case 8: level = "Eighth Grade";break;
     case 9: level = "Ninth Grade";break;
-    case 10: level = "Tenth Grade ";break;
+    case 10: level = "Tenth Grade";break;
     case 11: level = "Eleventh Grade";break;
     case 12: level = "Twelfth grade";break;
     case 13: level = "College student";break;
