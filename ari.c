@@ -4,8 +4,8 @@
 #include<string.h>
 
 string ari(string paragraph){
-  int i = 0,score;
-  int words=1,characters=0,sentences=0;
+  int i = 0;
+  int words=0,characters=0,sentences=0;
   string level;
   while(paragraph[i]!='\0'){
     if(isalnum(paragraph[i])){
@@ -20,7 +20,7 @@ string ari(string paragraph){
     i++;
   }
 
-  score = (int)(4.71*((float)characters/(float)words) + 0.5*((float)words/(float)sentences) - 21.43);
+  int score = ceil( ( 4.71 * (characters/words)) + ( 0.5* (words/sentences)) - 21.43 ) ;;
   
   
   switch(score){
