@@ -5,7 +5,6 @@
 
 string ari(string paragraph){
   int i = 0,score;
-  float marks;
   int words=1,characters=0,sentences=0;
   string level;
   while(paragraph[i]!='\0'){
@@ -21,8 +20,7 @@ string ari(string paragraph){
     i++;
   }
 
-  marks = 4.71*((float)characters/(float)words) + 0.5*((float)words/(float)sentences) - 21.43;
-  score = (int)marks;
+  score = (int)(4.71*((float)characters/(float)words) + 0.5*((float)words/(float)sentences) - 21.43);
   
   
   switch(score){
