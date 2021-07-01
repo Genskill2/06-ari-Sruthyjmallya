@@ -2,10 +2,11 @@
 #include <ctype.h>
 #include <math.h>
 #include<string.h>
+#include <assert.h>
 
 string ari(string paragraph){
   int i = 0;
-  int words=0,characters=0,sentences=0;
+  float words=0,characters=0,sentences=0;
   string level;
   while(paragraph[i]!='\0'){
     if(isalnum(paragraph[i])){
@@ -38,6 +39,7 @@ string ari(string paragraph){
     case 12: level = "Twelfth grade";break;
     case 13: level = "College student";break;
     case 14: level = "Professor";break;
+    default: break;
   }
   
   return(level);
